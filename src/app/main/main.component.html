@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <form>
+      <div class="todo-content">
+        <input
+          type="text"
+          id="todoAdd"
+          name="todolist"
+          placeholder="Add your ToDo here"
+          #Todo
+          [(ngModel)]="TodoString"
+          #todo="ngModel"
+          ngModel
+          required
+        />
+
+        <button
+          (click)="addTodo(Todo.value)"
+          [disabled]="!todo.valid"
+          class="addButton"
+        >
+          Add Todo
+        </button>
+
+        <div class="todoList">
+          <ul *ngFor="let Todo of todoList">
+            <li>
+              <p>{{ Todo.value }}</p>
+              <div class="delete-edit-Buttons">
+                <button
+                  class="deleteTodo-Button"
+                  (click)="deleteTodo(Todo.key)"
+                >
+                  Remove</button
+                ><button (click)="editTodo(Todo.key)" class="editTodo-Button">Edit</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button (click)="clearTodo()" class="clearTodo">Clear Todo</button>
+      </div>
+    </form>
+  </body>
+</html>
