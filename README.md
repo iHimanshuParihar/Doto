@@ -1,7 +1,7 @@
 # Doto
 
-![imageOne](./imagess/img1.png)
-![imageTwo](./imagess/img2.png)
-![imageThree](./imagess/img3.png)
-![imageFour](./imagess/img4.png)
-![imageFive](./imagess/img5.png)
+![imageOne](./images/img1.png)
+![imageTwo](./images/img2.png)
+![imageThree](./images/img3.png)
+![imageFour](./images/img4.png)
+![imageFive](./images/img5.png)
